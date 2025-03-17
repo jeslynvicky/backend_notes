@@ -10,3 +10,7 @@ app.use(express.json());
 app.use(Route);
 
 app.listen(5000, ()=>console.log('Server up and running . . . '));
+
+app.get("/", (req, res) => {
+    res.send("Server is running!");
+});
